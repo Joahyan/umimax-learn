@@ -14,12 +14,18 @@
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.0.1",
     "@umijs/max": "^4.0.47",
-    "antd": "^5.0.0"
+    "antd": "^5.0.0",
+    "dayjs": "^1.11.7",
+    "good-storage": "^1.1.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
+    "@types/good-storage": "^1.1.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "husky": "^8.0.1",
+    "commitlint": "^17.4.3",
+    "husky": "^8.0.3",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^2",
