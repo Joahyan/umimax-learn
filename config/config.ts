@@ -8,7 +8,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '围产信息系统'
+    title: '全院胎监项目'
   },
   routes,
   npmClient: 'pnpm'
