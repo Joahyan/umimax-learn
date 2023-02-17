@@ -12,6 +12,7 @@ module.exports = {
       }
     ],
     // 忽略命名规范
-    camelcase: [0, { ignoreDestructuring: true, properties: 'never' }]
+    camelcase: [0, { ignoreDestructuring: true, properties: 'never' }],
+    eqeqeq: 0
   }
 };
