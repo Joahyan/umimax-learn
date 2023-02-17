@@ -9,7 +9,6 @@ const HomePage: React.FC = () => {
   const { name } = useModel('global');
   const { initialState, setInitialState } = useModel('@@initialState');
   return (
-    <PageContainer ghost>
       <div className={styles.container}>
         <Guide name={name} />
         <Button
@@ -22,7 +21,6 @@ const HomePage: React.FC = () => {
           收缩
         </Button>
       </div>
-    </PageContainer>
   );
 };
 
