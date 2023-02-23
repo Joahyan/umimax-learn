@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "author": "joahyan <joahyan@163.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "postinstall": "max setup",
+    "web-norm": "web-norm --noEmoji",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
+    "eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{ts,js,tsx}\" --fix",
+    "commit": "git add . && git-cz"
+  },
+  "dependencies": {
+    "@umijs/max": "^4.0.47"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^4.1.2",
+    "web-norm": "^1.0.27",
+    "eslint": "^7.25.0",
+    "prettier": "^2.7.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "@commitlint/cz-commitlint": "^17.0.3",
+    "inquirer": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,jsx,tsx}": [
+      "npm run eslint"
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
