@@ -1,5 +1,5 @@
 const HomePage: React.FC = () => {
-  return <>Home</>;
+  return <>实时监控</>;
 };
 
 export default HomePage;

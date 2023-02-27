@@ -9,6 +9,7 @@
 .swc
 .history
 .vscode
+.vscode/setting.json
 .eslintcache
 yarn-error.log
 yarn.lock

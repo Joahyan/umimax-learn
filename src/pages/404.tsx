@@ -1,3 +1,5 @@
-export const NotFound: React.FC = () => {
+const NotFound: React.FC = () => {
   return <div>404</div>;
 };
+
+export default NotFound;
